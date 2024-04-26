@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secret Number</title>
+</head>
+<body>
+  </head>
+  
+  <body>
+
+  <form id="secretForm" action="index1.html" method="get" onsubmit="return checkSecretNumber()">
+     <h1>Enter a number </h1>
+      <label for="secret_number"></label><br>
+      <input type="text" id="secret_number" name="secret_number"><br><br>
+      <input type="submit" value="Submit">
+    
+  </form>
+
+  <script>
+  function checkSecretNumber() {
+      var secretNumberInput = document.getElementById("secret_number").value;
+      if (secretNumberInput === "2642007") {
+          return true; // Submit the form
+      } else {
+          alert("Please enter the correct secret number.");
+          return false; // Prevent the form from submitting
+      }
+  }
+  </script>
+
+  </body>
+  </html>
+    <style>
+      body {
+        background-color: darkslateblue;
+      }
+      #secretForm input[type="text"] {
+          padding: 6px 12px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.5;
+          color: #212529;
+          background-color: #fff;
+          background-clip: padding-box;
+          border: 1px solid #ced4da;
+          border-radius: 4px;
+          transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+      }
+
+      #secretForm input[type="text"]:focus {
+          color: #212529;
+          background-color: #fff;
+          border-color: #86b7fe;
+          outline: 0;
+          box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+      }
+
+
+      #secretForm {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #secretForm input[type="submit"] {
+        position: absolute;
+        right: 90px;
+          cursor: pointer;
+          outline: 0;
+          color: #fff;
+          background-color: #0d6efd;
+          border-color: #0d6efd;
+          display: inline-block;
+          font-weight: 400;
+          line-height: 1.5;
+          text-align: center;
+          border: 1px solid transparent;
+          padding: 6px 12px;
+          font-size: 16px;
+          border-radius: .25rem;
+          transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+      }
+
+      #secretForm input[type="submit"]:hover {
+          color: #fff;
+          background-color: #0b5ed7;
+          border-color: #0a58ca;
+      }
+
+      }
+      }
+    </style>
+  </form>
+</body>
+</html>
